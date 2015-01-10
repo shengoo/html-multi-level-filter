@@ -1,0 +1,30 @@
+{
+  "name": "html-multi-level-filter",
+  "version": "0.0.0",
+  "homepage": "https://github.com/shengoo/html-multi-level-filter",
+  "authors": [
+    "shengoo <shengoo@hotmail.com>"
+  ],
+  "description": "html multi level filter",
+  "main": "index.html",
+  "moduleType": [
+    "es6"
+  ],
+  "keywords": [
+    "html",
+    "filter"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3",
+    "bootstrap": "~3.3.1",
+    "angular": "~1.3.8"
+  }
+}
