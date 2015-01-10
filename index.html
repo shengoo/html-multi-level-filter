@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html ng-app="app">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,8 +11,20 @@
         <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
         <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
         <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+
+    <script src="js/multiLevelFilter.js"></script>
     </head>
-    <body>
-      <button class="btn btn-default">show</button>
+    <body ng-controller="ctrl">
+    <div class="container">
+        <input type="radio" ng-model="position">
+      <button type="button" ng-click="hi" multi-level-filter filter-position="position" class="btn btn-default" style="position: absolute;top:50%;left:50%;">show filter</button>
+      </div>
+
+    <script>
+        angular.module("app",["multiLevelFilterModule"])
+                .controller("ctrl", function ($scope) {
+
+                });
+    </script>
     </body>
 </html>
